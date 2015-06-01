@@ -13,6 +13,7 @@ class GameController: UIViewController {
     var moves = 0;
     @IBOutlet weak var outcomeLabel: UILabel!
     
+    @IBOutlet weak var playerMoves: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,8 @@ class GameController: UIViewController {
     
     
     @IBAction func choiceController(sender: UIButton) {
+        moves += 1
+        playerMoves.text = "\(moves)"
         let value = sender.titleLabel?.text
         outcomeLabel.text = value
     }
