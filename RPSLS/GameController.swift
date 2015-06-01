@@ -11,6 +11,8 @@ import UIKit
 
 class GameController: UIViewController {
     var moves = 0;
+    var opponentChoice = "";
+    weak var previousMove: UIButton!
     @IBOutlet weak var outcomeLabel: UILabel!
     
     @IBOutlet weak var playerMoves: UILabel!
@@ -38,8 +40,40 @@ class GameController: UIViewController {
     
     @IBAction func choiceController(sender: UIButton) {
         moves += 1
+        opponentChoiceFunc()
         playerMoves.text = "\(moves)"
-        let value = sender.titleLabel?.text
-        outcomeLabel.text = value
+        sender.backgroundColor = UIColor.blueColor()
+        sender.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        
+        if(sender.titleLabel!.text! == "Rock"){
+            println("in rock if")
+            if (opponentChoice == "scissors" || opponentChoice == "lizard") {
+                outcomeLabel.text = "You Win!"
+            } else if (opponentChoice == "paper" || opponentChoice == "spock") {
+                outcomeLabel.text = "You Lose!"
+            } else {
+                outcomeLabel.text = "Play again!"
+            }
+            println("this is rock statement")
+        }
+        
+    }
+    
+    func opponentChoiceFunc () {
+        
+        let randOpponent = arc4random_uniform(5) + 1
+        if (randOpponent == 1) {
+            opponentChoice = "rock"
+        } else if (randOpponent == 2) {
+            opponentChoice = "paper"
+        } else if (randOpponent == 3) {
+            opponentChoice = "scissors"
+        } else if (randOpponent == 4) {
+            opponentChoice = "lizard"
+        } else if (randOpponent == 5) {
+            opponentChoice = "spock"
+        }
+        outcomeLabel.text = opponentChoice
+        
     }
 }

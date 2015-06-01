@@ -10,13 +10,90 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RPSLS/GameController.swift"
-            timestampString = "454838330.042195"
+            timestampString = "454846533.227416"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "choiceController(_:)"
-            landmarkType = "5">
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "GameController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSLS.GameController.rockOpponent.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIButton&gt;"
+                  moduleName = "RPSLS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sam/Desktop/RPSLS/RPSLS/GameController.swift"
+                  timestampString = "454843848.90062"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSLS.GameController.rockOpponent.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIButton&gt;"
+                  moduleName = "RPSLS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sam/Desktop/RPSLS/RPSLS/GameController.swift"
+                  timestampString = "454843848.90062"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSLS.GameController.rockOpponent.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIButton&gt;"
+                  moduleName = "RPSLS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sam/Desktop/RPSLS/RPSLS/GameController.swift"
+                  timestampString = "454843848.900775"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSLS.GameController.init (RPSLS.GameController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; RPSLS.GameController"
+                  moduleName = "RPSLS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sam/Desktop/RPSLS/RPSLS/GameController.swift"
+                  timestampString = "454843848.900887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "397">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSLS.GameController.init (RPSLS.GameController.Type)(coder : ObjectiveC.NSCoder) -&gt; RPSLS.GameController"
+                  moduleName = "RPSLS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sam/Desktop/RPSLS/RPSLS/GameController.swift"
+                  timestampString = "454843848.901008"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "308">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

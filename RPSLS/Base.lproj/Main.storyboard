@@ -219,20 +219,6 @@
                                     <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="wV3-FP-x8Y"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMD-iu-YAG">
-                                <rect key="frame" x="105" y="60" width="65" height="39"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="1ff-MB-ak1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Rock">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="yeR-ID-oD3"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q3-dV-9nq">
                                 <rect key="frame" x="53" y="20" width="83" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -259,6 +245,20 @@
                                 <color key="textColor" red="0.97418935799999995" green="1" blue="0.19821497490000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMD-iu-YAG">
+                                <rect key="frame" x="105" y="60" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="1ff-MB-ak1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="yeR-ID-oD3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16702083719999999" green="0.96288091580000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -301,7 +301,6 @@
                         <outlet property="paperOpponent" destination="OpJ-aV-bmS" id="VQo-KO-kE8"/>
                         <outlet property="playerMoves" destination="uHW-HG-1Nt" id="gyy-Qs-leB"/>
                         <outlet property="rockOpponent" destination="nMD-iu-YAG" id="zce-BM-mkK"/>
-                        <outlet property="rockPlayer" destination="nMD-iu-YAG" id="olV-yf-IrN"/>
                         <outlet property="scissorsOpponent" destination="5q3-dV-9nq" id="pzN-yY-hct"/>
                         <outlet property="spockOpponent" destination="zgp-by-jnN" id="T3t-Tz-93w"/>
                     </connections>
