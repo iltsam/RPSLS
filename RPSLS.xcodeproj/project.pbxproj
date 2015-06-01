@@ -15,6 +15,7 @@
 		2238B0511B1C1E9F00E32662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */; };
 		2238B05D1B1C1E9F00E32662 /* RPSLSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */; };
 		2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B0661B1C1FCE00E32662 /* GameController.swift */; };
+		2238B06B1B1C224C00E32662 /* HighscoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B06A1B1C224C00E32662 /* HighscoresController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2238B05B1B1C1E9F00E32662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSLSTests.swift; sourceTree = "<group>"; };
 		2238B0661B1C1FCE00E32662 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		2238B06A1B1C224C00E32662 /* HighscoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighscoresController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +85,13 @@
 			children = (
 				2238B0431B1C1E9F00E32662 /* AppDelegate.swift */,
 				2238B0481B1C1E9F00E32662 /* ViewController.swift */,
+				2238B0661B1C1FCE00E32662 /* GameController.swift */,
+				2238B06A1B1C224C00E32662 /* HighscoresController.swift */,
 				2238B04A1B1C1E9F00E32662 /* Main.storyboard */,
 				2238B04D1B1C1E9F00E32662 /* Images.xcassets */,
 				2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */,
 				2238B0451B1C1E9F00E32662 /* RPSLS.xcdatamodeld */,
 				2238B0411B1C1E9F00E32662 /* Supporting Files */,
-				2238B0661B1C1FCE00E32662 /* GameController.swift */,
 			);
 			path = RPSLS;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */,
 				2238B0471B1C1E9F00E32662 /* RPSLS.xcdatamodeld in Sources */,
 				2238B0441B1C1E9F00E32662 /* AppDelegate.swift in Sources */,
+				2238B06B1B1C224C00E32662 /* HighscoresController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				2238B0621B1C1E9F00E32662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2238B0631B1C1E9F00E32662 /* Build configuration list for PBXNativeTarget "RPSLSTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				2238B0651B1C1E9F00E32662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

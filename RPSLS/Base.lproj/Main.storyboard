@@ -15,17 +15,77 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Rock Paper Scissors Lizard Spock " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muZ-Tc-ekB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="GSb-ix-Q8C"/>
+                                </constraints>
+                                <color key="textColor" red="0.97418935798415141" green="1" blue="0.19821497485025052" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EX-Qk-ZFq">
+                                <rect key="frame" x="136" y="338" width="49" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Play!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0ys-Tj-rwY" kind="modal" id="gWe-LI-vZR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQW-po-TOp">
+                                <rect key="frame" x="103" y="396" width="114" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Highscores">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QwH-V5-7Kf" kind="modal" id="ifi-of-Oyt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T9-7S-dEc">
+                                <rect key="frame" x="130" y="454" width="61" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="About">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bdy-ud-FBS" kind="modal" id="iKG-0T-F1E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16702083724683725" green="0.96288091575925328" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WQW-po-TOp" firstAttribute="top" secondItem="3EX-Qk-ZFq" secondAttribute="bottom" constant="17" id="2qV-fF-Z9A"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0T9-7S-dEc" secondAttribute="bottom" constant="74" id="9zp-Ev-hBt"/>
+                            <constraint firstItem="muZ-Tc-ekB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="AGn-Bx-4r4"/>
+                            <constraint firstItem="0T9-7S-dEc" firstAttribute="top" secondItem="WQW-po-TOp" secondAttribute="bottom" constant="18" id="ALp-m2-YFJ"/>
+                            <constraint firstItem="muZ-Tc-ekB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GsR-M9-RLs"/>
+                            <constraint firstItem="WQW-po-TOp" firstAttribute="centerX" secondItem="0T9-7S-dEc" secondAttribute="centerX" id="U2h-z1-oAV"/>
+                            <constraint firstItem="muZ-Tc-ekB" firstAttribute="centerX" secondItem="3EX-Qk-ZFq" secondAttribute="centerX" id="gNe-0O-KZU"/>
+                            <constraint firstAttribute="trailing" secondItem="muZ-Tc-ekB" secondAttribute="trailing" id="vrr-VR-rpI"/>
+                            <constraint firstItem="3EX-Qk-ZFq" firstAttribute="centerX" secondItem="WQW-po-TOp" secondAttribute="centerX" id="wGC-ms-Dbc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutButton" destination="0T9-7S-dEc" id="Zrz-V5-NbO"/>
+                        <outlet property="highscoresButton" destination="WQW-po-TOp" id="h6J-Ht-tcX"/>
+                        <outlet property="playButton" destination="3EX-Qk-ZFq" id="FoL-DL-1Kx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134.40000000000001" y="275.48000000000002"/>
+            <point key="canvasLocation" x="134" y="275"/>
         </scene>
-        <!--View Controller-->
+        <!--Highscores Controller-->
         <scene sceneID="WQL-iO-PjZ">
             <objects>
-                <viewController id="QwH-V5-7Kf" sceneMemberID="viewController">
+                <viewController id="QwH-V5-7Kf" customClass="HighscoresController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dS1-6f-Shw"/>
                         <viewControllerLayoutGuide type="bottom" id="Yp6-uM-DkA"/>
@@ -40,10 +100,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-179"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Controller-->
         <scene sceneID="uG6-eD-azu">
             <objects>
-                <viewController id="0ys-Tj-rwY" sceneMemberID="viewController">
+                <viewController id="0ys-Tj-rwY" customClass="GameController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jx4-ff-BFT"/>
                         <viewControllerLayoutGuide type="bottom" id="ZDL-HC-TwP"/>
@@ -51,12 +111,54 @@
                     <view key="view" contentMode="scaleToFill" id="fUb-Sg-Qc1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aod-q1-Tfz">
+                                <rect key="frame" x="202" y="509" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Spock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-s1-vn3">
+                                <rect key="frame" x="136" y="509" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Lizard">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXi-Xu-Df3">
+                                <rect key="frame" x="171" y="469" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Paper">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-ex-4qo">
+                                <rect key="frame" x="105" y="469" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Rock">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALG-w2-rqu">
+                                <rect key="frame" x="52" y="509" width="83" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Scissors">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16702083719999999" green="0.96288091580000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQm-1G-ueW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="565"/>
+            <point key="canvasLocation" x="544" y="573"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="t48-eC-mlT">
@@ -74,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9L5-vM-MaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="1281"/>
+            <point key="canvasLocation" x="436" y="1237"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
