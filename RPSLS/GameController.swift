@@ -10,5 +10,23 @@ import UIKit
 
 
 class GameController: UIViewController {
-
+    var moves = 0;
+    @IBOutlet weak var outcomeLabel: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func choiceController(sender: UIButton) {
+        let value = sender.titleLabel?.text
+        outcomeLabel.text = value
+    }
 }

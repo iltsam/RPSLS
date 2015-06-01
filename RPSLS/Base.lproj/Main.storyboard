@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -112,49 +113,98 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aod-q1-Tfz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aod-q1-Tfz">
                                 <rect key="frame" x="202" y="509" width="65" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="rBU-Fh-v4y"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Spock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="b5Q-bC-ewj"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-s1-vn3">
-                                <rect key="frame" x="136" y="509" width="65" height="39"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Lizard">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXi-Xu-Df3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXi-Xu-Df3">
                                 <rect key="frame" x="171" y="469" width="65" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="gsG-U4-Ggp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-ex-4qo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-ex-4qo">
                                 <rect key="frame" x="105" y="469" width="65" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="3FL-eZ-W3h"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="u1t-7j-jLv"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALG-w2-rqu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALG-w2-rqu">
                                 <rect key="frame" x="52" y="509" width="83" height="39"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="coE-yc-NvT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mym-0I-1bt">
+                                <rect key="frame" x="16" y="263" width="288" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-s1-vn3">
+                                <rect key="frame" x="136" y="509" width="65" height="39"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="sKy-16-YPy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Lizard">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceController:" destination="0ys-Tj-rwY" eventType="touchUpInside" id="seK-aZ-c07"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16702083719999999" green="0.96288091580000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mym-0I-1bt" firstAttribute="centerY" secondItem="fUb-Sg-Qc1" secondAttribute="centerY" id="35w-Fu-Eoc"/>
+                            <constraint firstItem="iXi-Xu-Df3" firstAttribute="baseline" secondItem="7lK-ex-4qo" secondAttribute="baseline" id="8W3-tV-qfW"/>
+                            <constraint firstItem="aod-q1-Tfz" firstAttribute="leading" secondItem="JjK-s1-vn3" secondAttribute="trailing" constant="1" id="ATU-ab-nZs"/>
+                            <constraint firstAttribute="bottom" secondItem="ALG-w2-rqu" secondAttribute="bottom" constant="20" symbolic="YES" id="Lny-gb-uCk"/>
+                            <constraint firstItem="Mym-0I-1bt" firstAttribute="trailing" secondItem="fUb-Sg-Qc1" secondAttribute="trailingMargin" id="N29-DC-Pp9"/>
+                            <constraint firstItem="ALG-w2-rqu" firstAttribute="top" secondItem="7lK-ex-4qo" secondAttribute="bottom" constant="1" id="N3M-Wo-Cho"/>
+                            <constraint firstItem="ALG-w2-rqu" firstAttribute="leading" secondItem="fUb-Sg-Qc1" secondAttribute="leadingMargin" constant="36" id="b96-Ug-jfv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iXi-Xu-Df3" secondAttribute="trailing" constant="68" id="cNB-3b-vyy"/>
+                            <constraint firstItem="7lK-ex-4qo" firstAttribute="leading" secondItem="fUb-Sg-Qc1" secondAttribute="leadingMargin" constant="89" id="g4o-F3-fpb"/>
+                            <constraint firstItem="JjK-s1-vn3" firstAttribute="baseline" secondItem="aod-q1-Tfz" secondAttribute="baseline" id="ggT-tk-c1W"/>
+                            <constraint firstItem="iXi-Xu-Df3" firstAttribute="leading" secondItem="7lK-ex-4qo" secondAttribute="trailing" constant="1" id="ljK-R6-Dly"/>
+                            <constraint firstItem="Mym-0I-1bt" firstAttribute="leading" secondItem="fUb-Sg-Qc1" secondAttribute="leadingMargin" id="u1m-yi-wwe"/>
+                            <constraint firstItem="JjK-s1-vn3" firstAttribute="baseline" secondItem="ALG-w2-rqu" secondAttribute="baseline" id="x01-tL-pg3"/>
+                            <constraint firstItem="JjK-s1-vn3" firstAttribute="leading" secondItem="ALG-w2-rqu" secondAttribute="trailing" constant="1" id="xtN-XQ-IV6"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="outcomeLabel" destination="Mym-0I-1bt" id="w2l-fN-zWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQm-1G-ueW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
