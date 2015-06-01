@@ -14,6 +14,7 @@
 		2238B04E1B1C1E9F00E32662 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2238B04D1B1C1E9F00E32662 /* Images.xcassets */; };
 		2238B0511B1C1E9F00E32662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */; };
 		2238B05D1B1C1E9F00E32662 /* RPSLSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */; };
+		2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B0661B1C1FCE00E32662 /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		2238B0561B1C1E9F00E32662 /* RPSLSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSLSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2238B05B1B1C1E9F00E32662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSLSTests.swift; sourceTree = "<group>"; };
+		2238B0661B1C1FCE00E32662 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */,
 				2238B0451B1C1E9F00E32662 /* RPSLS.xcdatamodeld */,
 				2238B0411B1C1E9F00E32662 /* Supporting Files */,
+				2238B0661B1C1FCE00E32662 /* GameController.swift */,
 			);
 			path = RPSLS;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2238B0491B1C1E9F00E32662 /* ViewController.swift in Sources */,
+				2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */,
 				2238B0471B1C1E9F00E32662 /* RPSLS.xcdatamodeld in Sources */,
 				2238B0441B1C1E9F00E32662 /* AppDelegate.swift in Sources */,
 			);
