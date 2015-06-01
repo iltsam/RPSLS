@@ -15,6 +15,16 @@ class GameController: UIViewController {
     
     @IBOutlet weak var playerMoves: UILabel!
     
+    @IBOutlet weak var scissorsOpponent: UIButton!
+    @IBOutlet weak var lizardOpponent: UIButton!
+    
+    @IBOutlet weak var spockOpponent: UIButton!
+    
+    @IBOutlet weak var rockOpponent: UIButton!
+    
+    @IBOutlet weak var paperOpponent: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
