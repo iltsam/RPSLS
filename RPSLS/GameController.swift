@@ -55,6 +55,46 @@ class GameController: UIViewController {
                 outcomeLabel.text = "Play again!"
             }
             println("this is rock statement")
+        } else if(sender.titleLabel!.text! == "Paper") {
+            println("in rock if")
+            if (opponentChoice == "rock" || opponentChoice == "spock") {
+                outcomeLabel.text = "You Win!"
+            } else if (opponentChoice == "scissors" || opponentChoice == "lizard") {
+                outcomeLabel.text = "You Lose!"
+            } else {
+                outcomeLabel.text = "Play again!"
+            }
+            println("this is rock statement")
+        } else if(sender.titleLabel!.text! == "Scissors") {
+            println("in rock if")
+            if (opponentChoice == "paper" || opponentChoice == "lizard") {
+                outcomeLabel.text = "You Win!"
+            } else if (opponentChoice == "rock" || opponentChoice == "scissors") {
+                outcomeLabel.text = "You Lose!"
+            } else {
+                outcomeLabel.text = "Play again!"
+            }
+            println("this is rock statement")
+        }else if(sender.titleLabel!.text! == "Lizard") {
+            println("in rock if")
+            if (opponentChoice == "spock" || opponentChoice == "paper") {
+                outcomeLabel.text = "You Win!"
+            } else if (opponentChoice == "rock" || opponentChoice == "scissors") {
+                outcomeLabel.text = "You Lose!"
+            } else {
+                outcomeLabel.text = "Play again!"
+            }
+            println("this is rock statement")
+        }else if(sender.titleLabel!.text! == "Spock") {
+            println("in rock if")
+            if (opponentChoice == "scissors" || opponentChoice == "rock") {
+                outcomeLabel.text = "You Win!"
+            } else if (opponentChoice == "paper" || opponentChoice == "lizard") {
+                outcomeLabel.text = "You Lose!"
+            } else {
+                outcomeLabel.text = "Play again!"
+            }
+            println("this is rock statement")
         }
         
     }
