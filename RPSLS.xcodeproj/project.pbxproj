@@ -16,6 +16,7 @@
 		2238B05D1B1C1E9F00E32662 /* RPSLSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */; };
 		2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B0661B1C1FCE00E32662 /* GameController.swift */; };
 		2238B06B1B1C224C00E32662 /* HighscoresController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B06A1B1C224C00E32662 /* HighscoresController.swift */; };
+		2238B0711B1C95A900E32662 /* AddToHighscoresClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2238B0701B1C95A900E32662 /* AddToHighscoresClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2238B05C1B1C1E9F00E32662 /* RPSLSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSLSTests.swift; sourceTree = "<group>"; };
 		2238B0661B1C1FCE00E32662 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		2238B06A1B1C224C00E32662 /* HighscoresController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighscoresController.swift; sourceTree = "<group>"; };
+		2238B0701B1C95A900E32662 /* AddToHighscoresClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToHighscoresClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				2238B0481B1C1E9F00E32662 /* ViewController.swift */,
 				2238B0661B1C1FCE00E32662 /* GameController.swift */,
 				2238B06A1B1C224C00E32662 /* HighscoresController.swift */,
+				2238B0701B1C95A900E32662 /* AddToHighscoresClass.swift */,
 				2238B04A1B1C1E9F00E32662 /* Main.storyboard */,
 				2238B04D1B1C1E9F00E32662 /* Images.xcassets */,
 				2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2238B0711B1C95A900E32662 /* AddToHighscoresClass.swift in Sources */,
 				2238B0491B1C1E9F00E32662 /* ViewController.swift in Sources */,
 				2238B0671B1C1FCE00E32662 /* GameController.swift in Sources */,
 				2238B0471B1C1E9F00E32662 /* RPSLS.xcdatamodeld in Sources */,
