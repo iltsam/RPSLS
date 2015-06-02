@@ -60,7 +60,7 @@ class HighscoresController: UITableViewController, NSFetchedResultsControllerDel
 
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("HomeCell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
         
@@ -74,7 +74,20 @@ class HighscoresController: UITableViewController, NSFetchedResultsControllerDel
     
     func controller(controller: NSFetchedResultsController, didChangeSection sectionInfo: NSFetchedResultsSectionInfo, atIndex sectionIndex: Int, forChangeType type: NSFetchedResultsChangeType) {
         
-        
+        switch type {
+        case NSFetchedResultsChangeType.Insert:
+            tableView.insertSections(NSIndexSet(index: sectionIndex), withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case NSFetchedResultsChangeType.Delete:
+            tableView.deleteSections(NSIndexSet(index: sectionIndex), withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case NSFetchedResultsChangeType.Move:
+            break
+        case NSFetchedResultsChangeType.Update:
+            break
+        default:
+            break
+        }
         
         
     }
@@ -89,17 +102,51 @@ class HighscoresController: UITableViewController, NSFetchedResultsControllerDel
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
+        switch editingStyle {
+        case .Delete:
+            managedObjectContext?.deleteObject(fetchedResultsController?.objectAtIndexPath(indexPath) as! Highscores)
+            managedObjectContext?.save(nil)
+        case .Insert:
+            break
+        case .None:
+            break
+        }
     }
-    */
+    
+    func controller(controller: NSFetchedResultsController, didChangeObject anObject: AnyObject, atIndexPath indexPath: NSIndexPath?, forChangeType type: NSFetchedResultsChangeType, newIndexPath: NSIndexPath?) {
+        
+        switch type {
+        case NSFetchedResultsChangeType.Insert:
+            tableView.insertRowsAtIndexPaths(NSArray(object: newIndexPath!) as [AnyObject], withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case NSFetchedResultsChangeType.Delete:
+            tableView.deleteRowsAtIndexPaths(NSArray(object: indexPath!) as [AnyObject], withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case NSFetchedResultsChangeType.Move:
+            tableView.deleteRowsAtIndexPaths(NSArray(object: indexPath!) as [AnyObject], withRowAnimation: UITableViewRowAnimation.Fade)
+            tableView.insertRowsAtIndexPaths(NSArray(object: newIndexPath!) as [AnyObject], withRowAnimation: UITableViewRowAnimation.Fade)
+            break
+        case NSFetchedResultsChangeType.Update:
+            tableView.cellForRowAtIndexPath(indexPath!)
+            break
+        default:
+            break
+        }
+    }
+    
+    func controllerWillChangeContent(controller: NSFetchedResultsController) {
+        tableView.beginUpdates()
+    }
+    
+    func controllerDidChangeContent(controller: NSFetchedResultsController) {
+        tableView.endUpdates()
+    }
+
 
     /*
     // Override to support rearranging the table view.
