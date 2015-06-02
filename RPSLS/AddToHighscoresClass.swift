@@ -7,20 +7,32 @@
 //
 
 import UIKit
+import CoreData
 
 class AddToHighscoresClass: UIViewController {
     var moves: Int!
+    // Retrieve the managedObjectCentext from AppDelegate
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
     @IBOutlet weak var movesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         movesLabel.text = "\(moves)"
         // Do any additional setup after loading the view.
+        println(managedObjectContext)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func add () {
+        let newItem = NSEntityDescription.insertNewObjectForEntityForName("Highscores", inManagedObjectContext: self.managedObjectContext!) as! Highscores
+        newItem.player_name = "Josh"
+        newItem.player_moves = moves
     }
     
 
