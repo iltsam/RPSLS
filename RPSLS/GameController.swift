@@ -78,6 +78,7 @@ class GameController: UIViewController {
         } else if(sender.titleLabel!.text! == "Paper") {
             if (opponentChoice == "rock" || opponentChoice == "spock") {
                 outcomeLabel.text = "You Win!"
+                playerWins()
             } else if (opponentChoice == "scissors" || opponentChoice == "lizard") {
                 outcomeLabel.text = "You Lose!"
             } else {
@@ -88,6 +89,7 @@ class GameController: UIViewController {
         } else if(sender.titleLabel!.text! == "Scissors") {
             if (opponentChoice == "paper" || opponentChoice == "lizard") {
                 outcomeLabel.text = "You Win!"
+                playerWins()
             } else if (opponentChoice == "rock" || opponentChoice == "scissors") {
                 outcomeLabel.text = "You Lose!"
             } else {
@@ -98,6 +100,7 @@ class GameController: UIViewController {
         }else if(sender.titleLabel!.text! == "Lizard") {
             if (opponentChoice == "spock" || opponentChoice == "paper") {
                 outcomeLabel.text = "You Win!"
+                playerWins()
             } else if (opponentChoice == "rock" || opponentChoice == "scissors") {
                 outcomeLabel.text = "You Lose!"
             } else {
@@ -108,6 +111,7 @@ class GameController: UIViewController {
         }else if(sender.titleLabel!.text! == "Spock") {
             if (opponentChoice == "scissors" || opponentChoice == "rock") {
                 outcomeLabel.text = "You Win!"
+                playerWins()
             } else if (opponentChoice == "paper" || opponentChoice == "lizard") {
                 outcomeLabel.text = "You Lose!"
             } else {
@@ -179,5 +183,12 @@ class GameController: UIViewController {
         scissorsPlayer.enabled = false
         lizardPlayer.enabled = false
         spockPlayer.enabled = false
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "highscoresSegue") {
+            var highScoresVC = segue.destinationViewController as! AddToHighscoresClass
+            highScoresVC.moves = moves
+        }
     }
 }

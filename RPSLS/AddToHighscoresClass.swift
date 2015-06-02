@@ -9,10 +9,12 @@
 import UIKit
 
 class AddToHighscoresClass: UIViewController {
+    var moves: Int!
 
+    @IBOutlet weak var movesLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        movesLabel.text = "\(moves)"
         // Do any additional setup after loading the view.
     }
 
