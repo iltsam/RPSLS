@@ -91,13 +91,13 @@
 				2238B0431B1C1E9F00E32662 /* AppDelegate.swift */,
 				2238B0481B1C1E9F00E32662 /* ViewController.swift */,
 				2238B0661B1C1FCE00E32662 /* GameController.swift */,
+				2238B0741B1DC97D00E32662 /* HighscoresController.swift */,
 				2238B0701B1C95A900E32662 /* AddToHighscoresClass.swift */,
 				2238B04A1B1C1E9F00E32662 /* Main.storyboard */,
 				2238B04D1B1C1E9F00E32662 /* Images.xcassets */,
 				2238B04F1B1C1E9F00E32662 /* LaunchScreen.xib */,
 				2238B0451B1C1E9F00E32662 /* RPSLS.xcdatamodeld */,
 				2238B0411B1C1E9F00E32662 /* Supporting Files */,
-				2238B0741B1DC97D00E32662 /* HighscoresController.swift */,
 			);
 			path = RPSLS;
 			sourceTree = "<group>";
